@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
+
+                // Set a timeout to remove the class and reset the animation
+                setTimeout(() => {
+                    entry.target.classList.remove('visible');
+                }, 1000); // Match the animation duration (500ms x 2 for 1000ms total)
+
                 observer.unobserve(entry.target); // Stop observing once visible
             }
         });
