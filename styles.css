@@ -86,6 +86,16 @@ section h2 {
     padding-bottom: 10px;
 }
 
+section h0 {
+    color: #93de30;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #93de30;
+    padding-bottom: 10px;
+}
+
 section p, section ol {
     font-size: 1.1rem;
     line-height: 1.6;
